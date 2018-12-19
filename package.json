@@ -1,0 +1,19 @@
+{
+  "name": "audi-ui",
+  "version": "1.0.0",
+  "description": "Audi UI card with CSS Grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreyhiflden/audi-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreyhiflden/audi-ui/issues"
+  },
+  "homepage": "https://github.com/dreyhiflden/audi-ui#readme"
+}
