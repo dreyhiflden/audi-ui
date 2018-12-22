@@ -1,0 +1,109 @@
+.headline-1 {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 52px;
+}
+
+.headline-2 {
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 36px;
+}
+
+.headline-3 {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 24px;
+}
+
+.headline-4 {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.headline-5 {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.headline-6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@media all and (min-width: $tablet) {
+  .headline-1 {
+    font-weight: 800;
+    font-size: 56px;
+  }
+
+  .headline-2 {
+    font-size: 35px;
+    line-height: 44px;
+  }
+
+  .headline-3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .headline-4 {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+}
+
+@media all and (min-width: $desktop) {
+  .headline-1 {
+    font-weight: 800;
+    font-size: 83px;
+    line-height: 92px;
+  }
+
+  .headline-2 {
+    font-size: 47px;
+    line-height: 56px;
+  }
+
+  .headline-3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .headline-4 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .headline-5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .headline-6 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.body-copy {
+  font-family: 'Roboto', sans-serif;
+  font-size: $base-font-size;
+  color: #333333;
+  line-height: 1.75;
+  font-weight: 300;
+
+  &--shortread {
+    line-height: 1.5;
+  }
+
+  &--small {
+    line-height: 1.5;
+    opacity: 40%;
+    font-size: calc(#{$base-font-size} - 2px)
+  }
+}
