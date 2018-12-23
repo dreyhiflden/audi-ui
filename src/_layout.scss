@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 5px;
+}
+
+@media all and (min-width: $tablet) {
+  .container {
+    display: grid;
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .container {
+    display: grid;
+  }
+}
