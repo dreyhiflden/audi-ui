@@ -1,24 +1,47 @@
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+.headline {
+  grid-area: headline;
 }
 
-.box {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 5px;
+.action {
+  grid-area: action;
 }
+
+.colored {
+  grid-area: colored;
+}
+
+.configuration {
+  grid-area: configuration;
+}
+
+.a4 {
+  grid-area: a4;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "headline headline"
+    "action action"
+    "colored colored"
+    "configuration a4";
+}
+
 
 @media all and (min-width: $tablet) {
   .container {
-    display: grid;
+    grid-template-areas:
+      "headline action"
+      "colored colored"
+      "configuration a4";
   }
 }
 
 @media all and (min-width: $desktop) {
   .container {
-    display: grid;
+    grid-template-areas:
+      "headline action colored colored"
+      "headline action configuration a4";
   }
 }
