@@ -1,0 +1,47 @@
+.headline {
+  grid-area: headline;
+}
+
+.action {
+  grid-area: action;
+}
+
+.colored {
+  grid-area: colored;
+}
+
+.configuration {
+  grid-area: configuration;
+}
+
+.a4 {
+  grid-area: a4;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "headline headline"
+    "action action"
+    "colored colored"
+    "configuration a4";
+}
+
+
+@media all and (min-width: $tablet) {
+  .container {
+    grid-template-areas:
+      "headline action"
+      "colored colored"
+      "configuration a4";
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .container {
+    grid-template-areas:
+      "headline action colored colored"
+      "headline action configuration a4";
+  }
+}

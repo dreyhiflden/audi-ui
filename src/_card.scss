@@ -1,0 +1,23 @@
+.card {
+  padding: 20px 20px;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+
+  &--colored {
+    background: #BB0A30;
+    color: #fff;
+  }
+
+  &--bg-image {
+    background: url("../img/card-390x480.jpg") center/cover no-repeat;
+    color: #fff;
+  }
+}
+
+@media all and (min-width: $tablet) {
+
+}
+
+@media all and (min-width: $desktop) {
+
+}
