@@ -21,27 +21,51 @@
 .container {
   display: grid;
   grid-gap: 5px;
+  background: #F5F5F5;
   grid-template-areas:
     "headline headline"
     "action action"
     "colored colored"
-    "configuration a4";
+    "temp temp";
+}
+
+.buttons-container {
+  align-self: end;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.temporary {
+  grid-area: temp;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "configuration a4"
 }
 
 
 @media all and (min-width: $tablet) {
   .container {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "headline action"
       "colored colored"
-      "configuration a4";
+      "temp temp";
   }
 }
 
 @media all and (min-width: $desktop) {
   .container {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "headline action colored colored"
-      "headline action configuration a4";
+      "headline action colored"
+      "headline action temp";
+  }
+
+  .buttons-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
