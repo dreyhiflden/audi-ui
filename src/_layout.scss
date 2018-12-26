@@ -55,7 +55,7 @@
       "header action"
       "colored colored"
       "footer footer";
-    grid-template-rows: 200px auto auto;
+    grid-template-rows: 200px 230px auto;
   }
 }
 
@@ -65,6 +65,7 @@
     grid-template-areas:
       "header action colored"
       "header action footer";
+    grid-template-rows: auto auto auto;
   }
 
   .buttons-container {
