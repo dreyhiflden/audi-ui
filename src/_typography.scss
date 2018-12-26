@@ -1,92 +1,126 @@
-.headline-1 {
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 52px;
-}
+.headline {
+  margin: 0;
 
-.headline-2 {
-  font-weight: 500;
-  font-size: 31px;
-  line-height: 36px;
-}
+  &--h1 {
+   font-weight: 800;
+   font-size: 46px;
+   line-height: 52px;
+  }
 
-.headline-3 {
-  font-weight: 300;
-  font-size: 21px;
-  line-height: 24px;
-}
+  &--h2 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 52px;
+  }
 
-.headline-4 {
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 20px;
-}
+  &--calendar {
+    font-size: 119px;
+    line-height: 1.32;
+  }
 
-.headline-5 {
-  font-weight: 100;
-  font-size: 16px;
-  line-height: 20px;
-}
+  &--h3 {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 24px;
+    margin: 0;
+  }
 
-.headline-6 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
+  &--h4 {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &--h5 {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &--h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
 }
 
 @media all and (min-width: $tablet) {
-  .headline-1 {
-    font-weight: 800;
-    font-size: 56px;
-  }
 
-  .headline-2 {
-    font-size: 35px;
-    line-height: 44px;
-  }
+  .headline {
+    &--h1 {
+      font-weight: 800;
+      font-size: 56px;
+    }
 
-  .headline-3 {
-    font-size: 22px;
-    line-height: 28px;
-  }
+    &--h2 {
+      font-size: 35px;
+      line-height: 44px;
+    }
 
-  .headline-4 {
-    font-size: 19px;
-    line-height: 24px;
-  }
+    &--calendar {
+      font-size: 100px;
+      line-height: 1.32;
+    }
 
+    &--h3 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &--big {
+      font-size: 64px;
+      line-height: 48px;
+    }
+
+    &--h4 {
+      font-size: 19px;
+      line-height: 24px;
+    }
+  }
 }
 
 @media all and (min-width: $desktop) {
-  .headline-1 {
-    font-weight: 800;
-    font-size: 83px;
-    line-height: 92px;
-  }
+  .headline {
+    &--h1 {
+      font-weight: 800;
+      font-size: 83px;
+      line-height: 92px;
+    }
 
-  .headline-2 {
-    font-size: 47px;
-    line-height: 56px;
-  }
+    &--h2 {
+      font-size: 47px;
+      line-height: 56px;
+    }
 
-  .headline-3 {
-    font-size: 26px;
-    line-height: 32px;
-  }
+    &--calendar {
+      font-size: 119px;
+      line-height: 1.32;
+    }
 
-  .headline-4 {
-    font-size: 22px;
-    line-height: 28px;
-  }
+    &--h3 {
+      font-size: 26px;
+      line-height: 32px;
+    }
 
-  .headline-5 {
-    font-size: 18px;
-    line-height: 24px;
-  }
+    &--big {
+      font-size: 84px;
+      line-height: 68px;
+    }
 
-  .headline-6 {
-    font-size: 18px;
-    line-height: 28px;
+    &--h4 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &--h5 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &--h6 {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 }
 
