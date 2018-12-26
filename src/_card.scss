@@ -4,6 +4,7 @@
   font-size: $base-font-size;
   font-family: $base-font-family;
   background: #fff;
+  grid-template-rows: max-content max-content auto;
 
   &--colored {
     background: #BB0A30;
@@ -14,6 +15,17 @@
     background: url("../img/card-390x480.jpg") center/cover no-repeat;
     color: #fff;
   }
+
+  &__date {
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 5px 0;
+  }
 }
 
 @media all and (min-width: $tablet) {
@@ -22,7 +34,6 @@
 
 @media all and (min-width: $desktop) {
     .card {
-
       &--bg-image {
         height: 480px;
       }

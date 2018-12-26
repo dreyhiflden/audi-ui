@@ -1,5 +1,5 @@
-.headline {
-  grid-area: headline;
+.header {
+  grid-area: header;
 }
 
 .action {
@@ -16,6 +16,7 @@
 
 .a4 {
   grid-area: a4;
+  grid-template-rows: auto auto;
 }
 
 .container {
@@ -23,10 +24,11 @@
   grid-gap: 5px;
   background: #F5F5F5;
   grid-template-areas:
-    "headline headline"
+    "header header"
     "action action"
     "colored colored"
-    "temp temp";
+    "footer footer";
+  grid-template-rows: auto 200px auto;
 }
 
 .buttons-container {
@@ -36,8 +38,8 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.temporary {
-  grid-area: temp;
+.footer {
+  grid-area: footer;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr;
@@ -50,9 +52,10 @@
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "headline action"
+      "header action"
       "colored colored"
-      "temp temp";
+      "footer footer";
+    grid-template-rows: 200px auto auto;
   }
 }
 
@@ -60,8 +63,8 @@
   .container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "headline action colored"
-      "headline action temp";
+      "header action colored"
+      "header action footer";
   }
 
   .buttons-container {
