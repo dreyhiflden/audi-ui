@@ -11,8 +11,12 @@
     color: #fff;
   }
 
-  &--bg-image {
+  &__bg-image {
     color: #fff;
+
+    &--old-man-photo {
+      background: url("../img/card-390x480.jpg") center/cover no-repeat;
+    }
   }
 
   &__date {
@@ -24,10 +28,6 @@
     margin: 0;
     padding: 5px 0;
   }
-}
-
-.old-guy-bg-image {
-  background: url("../img/card-390x480.jpg") center/cover no-repeat;
 }
 
 @media all and (min-width: $tablet) {
