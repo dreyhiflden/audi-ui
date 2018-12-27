@@ -35,9 +35,9 @@
 }
 
 @media all and (min-width: $desktop) {
-    .card {
-      &--bg-image {
-        height: 480px;
-      }
-    }
-}
+
+}  .card {
+     &--bg-image {
+       height: 480px;
+     }
+   }
