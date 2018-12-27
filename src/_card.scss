@@ -30,10 +30,6 @@
   background: url("../img/card-390x480.jpg") center/cover no-repeat;
 }
 
-@media all and (min-width: $tablet) {
-
-}
-
 @media all and (min-width: $desktop) {
   .card {
     &--bg-image {
