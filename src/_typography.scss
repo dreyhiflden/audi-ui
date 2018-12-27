@@ -1,0 +1,149 @@
+.headline {
+  margin: 0;
+
+  &--h1 {
+   font-weight: 800;
+   font-size: 72px;
+   line-height: 62px;
+  }
+
+  &--h2 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  &--xl {
+    font-size: 119px;
+    line-height: 1.32;
+  }
+
+  &--h3 {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &--h4 {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &--h5 {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &--h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+
+@media all and (min-width: $tablet) {
+
+  .headline {
+    &--h1 {
+      font-weight: 800;
+      font-size: 56px;
+    }
+
+    &--h2 {
+      font-size: 35px;
+      line-height: 44px;
+    }
+
+    &--xl {
+      font-size: 100px;
+      line-height: 1.32;
+    }
+
+    &--h3 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &--big {
+      font-size: 64px;
+      line-height: 48px;
+    }
+
+    &--h4 {
+      font-size: 19px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .headline {
+    &--h1 {
+      font-weight: 800;
+      font-size: 83px;
+      line-height: 92px;
+    }
+
+    &--h2 {
+      font-size: 47px;
+      line-height: 56px;
+    }
+
+    &--xl {
+      font-size: 119px;
+      line-height: 1.32;
+    }
+
+    &--h3 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    &--big {
+      font-size: 84px;
+      line-height: 68px;
+    }
+
+    &--h4 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &--h5 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &--h6 {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+.body-copy {
+  font-family: 'Roboto', sans-serif;
+  font-size: $base-font-size;
+  color: #333333;
+  line-height: 1.75;
+  font-weight: 300;
+
+  &--shortread {
+    line-height: 1.5;
+  }
+
+  &--small {
+    line-height: 1.5;
+    opacity: 40%;
+    font-size: $base-font-size - 2px;
+  }
+}
+
+.font-size {
+  &--small {
+    font-size: 14px;
+  }
+}

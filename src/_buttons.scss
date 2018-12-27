@@ -1,0 +1,63 @@
+.btn {
+  font-size: $base-font-size;
+  text-decoration: none;
+  border: $btn-border;
+  padding: $btn-papping;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $base-font-family;
+  text-align: center;
+  background: transparent;
+  min-width: $base-font-size * 9;
+
+  &--primary {
+    background: #000;
+    color: #fff;
+  }
+
+  &--secondary {
+    color: #000;
+  }
+
+  &--text-and-arrow {
+    border: none;
+    color: #000;
+    position: relative;
+    &::after {
+      content: ">";
+      font-size: 20px;
+      position: absolute;
+      padding: 0 0 0 5px;
+      transition: transform 0.1s linear;
+    }
+    &:hover::after {
+      transform: translateX(8px);
+    }
+  }
+
+  &__text {
+    border: none;
+    margin: 0;
+    padding: 0;
+    justify-self: start;
+    text-align: left;
+    min-width: auto;
+
+    &--white {
+      color: #fff;
+    }
+  }
+}
+
+@media all and (min-width: $tablet) {
+  .btn {
+    font-size: $base-font-size + 2px;
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .btn {
+    font-size: $base-font-size + 4px;
+    margin: 0 0 5px 0;
+  }
+}

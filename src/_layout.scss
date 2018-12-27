@@ -1,0 +1,75 @@
+.header {
+  grid-area: header;
+}
+
+.action {
+  grid-area: action;
+}
+
+.colored {
+  grid-area: colored;
+}
+
+.configuration {
+  grid-area: configuration;
+}
+
+.a4 {
+  grid-area: a4;
+  grid-template-rows: auto auto;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  background: #F5F5F5;
+  grid-template-areas:
+    "header header"
+    "action action"
+    "colored colored"
+    "footer footer";
+  grid-template-rows: auto 200px auto;
+}
+
+.buttons-container {
+  align-self: end;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "configuration a4"
+}
+
+
+@media all and (min-width: $tablet) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header action"
+      "colored colored"
+      "footer footer";
+    grid-template-rows: 200px 230px auto;
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header action colored"
+      "header action footer";
+    grid-template-rows: auto auto auto;
+  }
+
+  .buttons-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

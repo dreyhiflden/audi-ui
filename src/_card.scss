@@ -1,0 +1,39 @@
+.card {
+  display: grid;
+  padding: 20px 20px;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  background: #fff;
+  grid-template-rows: max-content max-content auto;
+
+  &--colored {
+    background: $card-colored;
+    color: #fff;
+  }
+
+  &--bg-image {
+    color: #fff;
+  }
+
+  &__date {
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 5px 0;
+  }
+}
+
+.old-man-bg {
+  background: url("../img/card-390x480.jpg") center/cover no-repeat;
+}
+
+@media all and (min-width: $desktop) {
+  .card {
+    &--bg-image {
+      height: 480px;
+    }
+  }
+}
