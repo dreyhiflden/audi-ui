@@ -3,8 +3,8 @@
 
   &--h1 {
    font-weight: 800;
-   font-size: 46px;
-   line-height: 52px;
+   font-size: 72px;
+   line-height: 62px;
   }
 
   &--h2 {
@@ -13,7 +13,7 @@
     line-height: 52px;
   }
 
-  &--calendar {
+  &--xl {
     font-size: 119px;
     line-height: 1.32;
   }
@@ -57,7 +57,7 @@
       line-height: 44px;
     }
 
-    &--calendar {
+    &--xl {
       font-size: 100px;
       line-height: 1.32;
     }
@@ -92,7 +92,7 @@
       line-height: 56px;
     }
 
-    &--calendar {
+    &--xl {
       font-size: 119px;
       line-height: 1.32;
     }
@@ -138,6 +138,12 @@
   &--small {
     line-height: 1.5;
     opacity: 40%;
-    font-size: calc(#{$base-font-size} - 2px)
+    font-size: $base-font-size - 2px;
+  }
+}
+
+.font-size {
+  &--small {
+    font-size: 14px;
   }
 }

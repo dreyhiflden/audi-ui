@@ -7,7 +7,7 @@
   grid-template-rows: max-content max-content auto;
 
   &--colored {
-    background: #BB0A30;
+    background: $card-colored;
     color: #fff;
   }
 
@@ -17,7 +17,6 @@
   }
 
   &__date {
-    font-size: 14px;
     margin: 0;
     padding: 5px 0;
   }
